@@ -1,38 +1,156 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-div{
+  background-image: linear-gradient(to bottom, rgb(243, 243, 232), rgb(214, 211, 145));
+}
+.logo-div {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 350px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cont-2{
   display: flex;
   flex-direction: column;
+  margin: 5px 10px;
+  width: 65%;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.img-1 {
+  height: 700px;
+  width: auto;
+}
+.img-2 {
+ width:100%;
+ margin: 10px;
+}
+.cont-3{
+  margin:10px;
+  text-align: center;
+}
+.img-3{
+  width: 80%;
+  margin-top: 50px;
+}
+.Heading{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+h3{
+font-size: 16px;
+margin-top: 20px;
+text-align: center;
+}
+p,li{
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: justify;
+}
+.cont-3,h4{
+  letter-spacing: 1.5px;
+  margin:0px 5px;
+}
+hr.new4 {
+  border: 2px solid red;
+  margin: 10px 5px;
+}
+.footer-para{
+  text-align: center;
+}
+.footer-para,p{
+  margin: 10px;
+  text-align: center;
+}
+.social{
+  width: 100%;
+  height: 150px;
+  background-color:  rgb(228, 60, 41);
+  display: flex;
+justify-content: space-around;
+text-align: center;
+align-items: center;
+}
+.social,p{
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*Media Queries*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*-------------------Mobiles phone---------------------*/
+
+@media (max-width : 768px){
+  .logo {
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+  .Container {
+    display: flex;
+   flex-direction: column;
+    margin: 15px;
+  }
+  .img-1 {
+    height: 400px;
+    width: auto;
+  }
+  .main-div{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   background-image: linear-gradient(to bottom, rgb(238, 218, 218), rgb(241, 34, 11));
+   width: 100vh;
+  }
+  .Heading{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    align-items: center;
+  }
+  .cont-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  margin: auto;
+  }
+  .img-2 {
+width: 98%;
+height: auto;
+   }
+  .para{
+    margin: 5px 15px ;
+    font-size: 14px;
+    font-family:sans-serif;
+  }
+  h3{
+    font-size: 15px; 
+    margin: 5px 10px; 
+  }
+  .img-3{
+    width: 95%;
+   margin: auto;
+  }
+  .social{
+    width: 100%;
+  height: 200px;
+    background-color:  rgb(4, 4, 4);
+    display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  color: yellowgreen;
+  }
+  .social,p{
+    cursor: pointer;
   }
 }
